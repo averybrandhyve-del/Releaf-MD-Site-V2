@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-light: #f0fdf4; /* green-50 */
+  --color-brand-primary: #16a34a; /* green-600 */
+  --color-brand-dark: #14532d; /* green-900 */
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-800 antialiased selection:bg-brand-primary selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-slate-900;
+  }
+}

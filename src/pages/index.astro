@@ -1,0 +1,270 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="ReleafMD | Florida Medical Marijuana Card Evaluations" 
+  description="Clear, private, physician-led evaluations for new patients, renewals, and transfers."
+>
+
+  <!-- Hero Section -->
+  <section class="bg-brand-light py-20 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight mb-8 max-w-4xl mx-auto leading-tight">
+        Clear, private, physician-led evaluations for new patients, renewals, and transfers.
+      </h1>
+      
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10">
+        <a href="#lead-form" class="w-full sm:w-auto bg-brand-primary hover:bg-brand-dark text-white px-8 py-4 rounded-md font-bold text-lg transition-colors text-center">
+          SCHEDULE APPOINTMENT
+        </a>
+        <a href="tel:8136513492" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-900 border-2 border-slate-200 px-8 py-4 rounded-md font-bold text-lg transition-colors text-center">
+          CALL NOW
+        </a>
+      </div>
+      <div class="mt-6">
+        <a href="#lead-form" class="text-brand-primary font-bold hover:underline">BOOK CAPTURE FORM</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Types Section -->
+  <section id="visit-types" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-16">
+        <h2 class="text-3xl font-black text-slate-900 uppercase tracking-tight mb-4">UNDERSTAND NEW, RENEWAL, AND TRANSFER VISITS</h2>
+        <p class="text-lg text-slate-600 max-w-3xl">
+          Florida requirements are different depending on where you are in your certification cycle. Here is what each visit type means so you can book the right appointment the first time.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- New Patient -->
+        <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+          <h3 class="text-xl font-bold mb-4 uppercase text-brand-dark">NEW PATIENT</h3>
+          <p class="text-slate-600 mb-8">
+            For first-time certification in Florida. State law requires an in-person physical exam before an initial physician certification can be issued. We review your history, confirm a qualifying condition, and enter your certification in the Medical Marijuana Use Registry.
+          </p>
+          <a href="/evaluations" class="text-brand-primary font-bold hover:underline uppercase">NEW PATIENT VISIT &rarr;</a>
+        </div>
+
+        <!-- Renewal -->
+        <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+          <h3 class="text-xl font-bold mb-4 uppercase text-brand-dark">RENEWAL</h3>
+          <p class="text-slate-600 mb-8">
+            For established patients who need a new certification cycle. Florida requires follow-up at least every 30 weeks (210 days). For eligible established patients, renewal follow-ups may be completed through telehealth under current Florida law.
+          </p>
+          <a href="/renewals" class="text-brand-primary font-bold hover:underline uppercase">BOOK RENEWAL VISIT &rarr;</a>
+        </div>
+
+        <!-- Transfer -->
+        <div class="bg-slate-50 p-8 rounded-xl border border-slate-200">
+          <h3 class="text-xl font-bold mb-4 uppercase text-brand-dark">TRANSFER</h3>
+          <p class="text-slate-600 mb-4">
+            For patients switching certifying physicians to ReleafMD. Florida requires that a patient not have an active certification from another physician when a new certification is issued, so we guide timing and registry steps for a smooth handoff.
+          </p>
+          <p class="text-sm text-slate-500 italic mb-8">
+            As of April 11, 2026: physician certifications and state card renewals are separate steps. State card renewal is typically annual through the Florida portal.
+          </p>
+          <a href="#lead-form" class="text-brand-primary font-bold hover:underline uppercase">START TRANSFER VISIT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-16 text-center">
+        <h2 class="text-3xl font-black uppercase tracking-tight mb-4">How It Works</h2>
+        <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+          A simple four-step timeline so you know what to expect and when each part happens.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+        <div class="hidden md:block absolute top-6 left-0 w-full h-0.5 bg-slate-800"></div>
+        
+        <div class="relative z-10">
+          <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center font-bold text-xl mb-6">1</div>
+          <h3 class="text-xl font-bold mb-4 uppercase">SCHEDULE APPOINTMENT</h3>
+          <p class="text-slate-300 mb-4">Choose your visit type and lock in a convenient time for your evaluation.</p>
+          <ul class="text-sm text-slate-400 space-y-2 list-disc pl-4">
+            <li>Submit the form or call our office.</li>
+            <li>We confirm whether you are new, renewal, or transfer.</li>
+            <li>You receive appointment and check-in details.</li>
+          </ul>
+        </div>
+
+        <div class="relative z-10">
+          <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center font-bold text-xl mb-6">2</div>
+          <h3 class="text-xl font-bold mb-4 uppercase">MEET WITH THE DOCTOR</h3>
+          <p class="text-slate-300 mb-4">Complete a private physician-led evaluation focused on your history and needs.</p>
+          <ul class="text-sm text-slate-400 space-y-2 list-disc pl-4">
+            <li>Review your condition, goals, and treatment history.</li>
+            <li>Get clear answers to common Florida process questions.</li>
+            <li>Leave with clear next steps tailored to your visit type.</li>
+          </ul>
+        </div>
+
+        <div class="relative z-10">
+          <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center font-bold text-xl mb-6">3</div>
+          <h3 class="text-xl font-bold mb-4 uppercase">COMPLETE STATE STEPS</h3>
+          <p class="text-slate-300 mb-4">Complete your Florida registry tasks with step-by-step support from our staff.</p>
+          <ul class="text-sm text-slate-400 space-y-2 list-disc pl-4">
+            <li>Finish or update your state registry profile details.</li>
+            <li>Submit any state-required information and payment.</li>
+            <li>Receive support if you are transferring from another physician.</li>
+          </ul>
+        </div>
+
+        <div class="relative z-10">
+          <div class="w-12 h-12 bg-brand-primary rounded-full flex items-center justify-center font-bold text-xl mb-6">4</div>
+          <h3 class="text-xl font-bold mb-4 uppercase">GET CERTIFIED</h3>
+          <p class="text-slate-300 mb-4">Once approved, your certification path is active and you are ready for your next step.</p>
+          <ul class="text-sm text-slate-400 space-y-2 list-disc pl-4">
+            <li>Move forward with confidence and documented physician guidance.</li>
+            <li>Know your follow-up timing before your next renewal window.</li>
+            <li>Stay connected to ReleafMD for continuing care support.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <p class="text-center text-slate-500 italic mt-12">
+        Timing can vary based on appointment availability and Florida state processing times.
+      </p>
+    </div>
+  </section>
+
+  <!-- Doctor Feature -->
+  <section id="doctor-feature" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="w-full md:w-1/3">
+          <div class="aspect-[3/4] bg-slate-200 rounded-lg flex items-center justify-center border border-slate-300">
+            <span class="text-slate-500 font-medium">DOCTOR FEATURE</span>
+          </div>
+        </div>
+        <div class="w-full md:w-2/3">
+          <h2 class="text-3xl font-black text-slate-900 mb-6 uppercase">Meet the Medical Marijuana Doctor</h2>
+          <div class="space-y-4 text-lg text-slate-600">
+            <p>
+              Dr. Kelly Ennix King is a compassionate physician who helps patients get evaluated for a Florida medical marijuana card with confidence and ease. Since 2018, she has been committed to expanding access to medical cannabis through personalized care, patient education, and a supportive evaluation experience. She is also a disabled Air Force veteran and co-founder of ReleafMD.
+            </p>
+            <p>
+              At ReleafMD, you are not treated like a number. Dr. Kelly provides private, one-on-one evaluations designed to make the process simple, comfortable, and affordable. She takes time to understand your needs, answer your questions, and help you move forward with clarity.
+            </p>
+            <p>
+              Scheduling is easy, appointments are convenient, and your next step starts with a compassionate physician focused on your care.
+            </p>
+          </div>
+          <div class="mt-8">
+            <a href="#footer" class="text-brand-primary font-bold hover:underline uppercase">MEET OUR PHYSICIAN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted Care & Why ReleafMD -->
+  <section class="py-20 bg-brand-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div>
+          <h2 class="text-3xl font-black text-slate-900 mb-4 uppercase">Trusted Care</h2>
+          <p class="text-lg text-slate-600 mb-8">
+            Physician-led evaluations with compassionate support and a straightforward process.
+          </p>
+          <a href="#footer" class="text-brand-primary font-bold hover:underline uppercase">MEET OUR PHYSICIAN</a>
+        </div>
+        
+        <div>
+          <h2 class="text-2xl font-black text-slate-900 mb-6 uppercase">WHY RELEAFMD</h2>
+          <ul class="space-y-4 text-lg text-slate-700 font-medium">
+            <li class="flex items-center gap-3">
+              <span class="text-brand-primary">✓</span> Personalized Guidance
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-brand-primary">✓</span> Straightforward Process
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-brand-primary">✓</span> Trusted Support
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who This Is For & FAQ -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <!-- Who This Is For -->
+        <div class="lg:col-span-1">
+          <h2 class="text-2xl font-black text-slate-900 mb-8 uppercase">WHO THIS IS FOR</h2>
+          <div class="space-y-6">
+            <div class="border-b border-slate-200 pb-4">
+              <h3 class="font-bold text-slate-900 mb-1">Renewal Evaluation</h3>
+              <p class="text-slate-600">Call for details</p>
+            </div>
+            <div class="border-b border-slate-200 pb-4">
+              <h3 class="font-bold text-slate-900 mb-1">Transfer Evaluation</h3>
+              <p class="text-slate-600">Call for details</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 mb-1">Booking Deposit</h3>
+              <p class="text-slate-600">Call for details</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl font-black text-slate-900 mb-8 uppercase">FAQ</h2>
+          <div class="space-y-8">
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Are you a dispensary?</h3>
+              <p class="text-slate-600">No. ReleafMD is a physician-led clinic focused on evaluations and certification guidance.</p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">How do I book an appointment?</h3>
+              <p class="text-slate-600">Use the appointment form or call us directly at 813-651-3492 to begin your intake process.</p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">What is the cost?</h3>
+              <p class="text-slate-600">Please contact our office for the latest payment and reimbursement guidance for evaluations.</p>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Can I renew early?</h3>
+              <p class="text-slate-600">Yes. Early renewal windows may be available based on your current certification timeline.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form / CTA -->
+  <section id="lead-form" class="py-20 bg-slate-900 text-white text-center border-t border-slate-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-black mb-6 uppercase">Ready For Your Physician-Led Evaluation?</h2>
+      <p class="text-xl text-slate-300 mb-10">Call 813-651-3492 or request a quick callback.</p>
+      
+      <!-- Dummy Form -->
+      <form class="max-w-md mx-auto space-y-4 mb-10 text-left">
+        <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-md bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brand-primary" />
+        <input type="tel" placeholder="Phone" class="w-full px-4 py-3 rounded-md bg-slate-800 border border-slate-700 text-white focus:outline-none focus:border-brand-primary" />
+        <button type="button" class="w-full bg-brand-primary hover:bg-brand-dark text-white font-bold py-3 rounded-md transition-colors uppercase">
+          Request Callback
+        </button>
+      </form>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+        <a href="tel:8136513492" class="text-brand-primary hover:text-white font-bold text-xl transition-colors">813-651-3492</a>
+        <a href="mailto:info@releafmd.com" class="text-brand-primary hover:text-white font-bold text-xl transition-colors">info@releafmd.com</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
