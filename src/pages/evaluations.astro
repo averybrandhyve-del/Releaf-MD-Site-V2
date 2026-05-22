@@ -4,36 +4,72 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout 
   title="Florida Medical Marijuana Evaluations | Releaf MD" 
-  description="Book your medical marijuana evaluation in Florida today. Clear, private, physician-led assessments."
+  description="Book your medical marijuana evaluation in Florida today. Professional, private, physician-led assessments by Dr. Kelly Ennix King."
 >
-  <section class="bg-brand-light py-16 lg:py-24">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl sm:text-5xl font-black text-slate-900 mb-6 uppercase">Florida Medical Marijuana Evaluations</h1>
-      <p class="text-xl text-slate-600">
-        [Content Placeholder: Service Landing Page targeting "medical marijuana evaluation florida"]
+  <section class="bg-brand-mint py-16 lg:py-24 border-b border-brand-primary/10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+      <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-brand-primary/10 text-brand-primary rounded-full text-xs font-bold uppercase tracking-wider">
+        🩺 Service Landing Page
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-serif-headline text-brand-dark uppercase">Florida Medical Marijuana Evaluations</h1>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        Start your medical cannabis journey with a secure, compassionate clinical assessment.
       </p>
     </div>
   </section>
 
   <section class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg prose-slate">
-      <p>[Content Placeholder: Bottom of funnel content encouraging users to book an appointment.]</p>
-      
-      <div class="my-8 p-6 bg-blue-50 border-l-4 border-blue-500 rounded-r-lg">
-        <p class="m-0 font-medium">Related Resource: Need to renew instead? <a href="/renewals" class="text-brand-primary hover:underline">Learn about our renewal process here</a>.</p>
-      </div>
-      
-      <div class="my-8 p-6 bg-emerald-50 border-l-4 border-emerald-500 rounded-r-lg">
-        <p class="m-0 font-medium">Not sure if you qualify? <a href="/qualifying-conditions" class="text-brand-primary hover:underline">Check the qualifying conditions</a>.</p>
-      </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white border border-brand-primary/10 rounded-3xl p-8 sm:p-12 shadow-whisper prose prose-slate max-w-none space-y-8">
+        
+        <h2 class="text-2xl font-serif-headline text-brand-dark">How the Initial Evaluation Works</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Florida Department of Health rules state that a patient must receive an in-person clinical assessment from a qualified certifying physician before obtaining an active card. This ensures that a professional doctor establishes a valid patient-physician relationship and directly monitors your care.
+        </p>
 
-      <div class="my-8 p-6 bg-slate-50 border-l-4 border-slate-500 rounded-r-lg">
-        <p class="m-0 font-medium">Our evaluations include a <a href="/treatment-plans" class="text-brand-primary hover:underline">personalized treatment plan</a> tailored to your needs.</p>
-      </div>
+        <h3 class="text-xl font-bold text-brand-dark">Evaluation Process Steps</h3>
+        <ul class="list-disc pl-5 space-y-3 text-slate-600 text-sm">
+          <li><strong>Step 1: Clinical Intake:</strong> Schedule your appointment and complete our online medical history questionnaire. Bring any relevant documents or prescription histories.</li>
+          <li><strong>Step 2: Physician Consult:</strong> Meet privately with Dr. Kelly Ennix King. She reviews your symptoms, determines eligibility, and designs your initial routes and dosage recommendations.</li>
+          <li><strong>Step 3: Registry Entry:</strong> Once approved, ReleafMD immediately enters your name and certification into the Florida Medical Marijuana Use Registry.</li>
+        </ul>
 
-      <p class="mt-12 text-sm text-slate-500 italic">
-        Read our full <a href="/florida-medical-marijuana-card-guide" class="text-brand-primary hover:underline">Complete Guide to Florida Medical Marijuana Cards</a>.
-      </p>
+        <!-- Callouts / Cross-Linking -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 my-8">
+          <div class="bg-brand-mint/40 p-6 rounded-2xl border border-brand-primary/10">
+            <h4 class="font-bold text-brand-dark text-sm mb-2">Already Certified in Florida?</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              If you have an active card but need to renew your 30-week physician orders, check our <a href="/renewals" class="text-brand-accent font-bold hover:underline">Renewals Guide</a>.
+            </p>
+          </div>
+          
+          <div class="bg-brand-mint/40 p-6 rounded-2xl border border-brand-primary/10">
+            <h4 class="font-bold text-brand-dark text-sm mb-2">Qualifying Criteria</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Not sure if your medical diagnosis meets the state rules? <a href="/qualifying-conditions" class="text-brand-accent font-bold hover:underline">Check qualifying conditions here</a>.
+            </p>
+          </div>
+        </div>
+
+        <h2 class="text-2xl font-serif-headline text-brand-dark">What's Included in Your Session</h2>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Unlike high-volume "card mills", ReleafMD focuses on comprehensive clinical support. Your evaluation session automatically includes:
+        </p>
+        <ul class="list-disc pl-5 space-y-2 text-slate-600 text-sm">
+          <li>Full 70-day orders for all eligible administration methods.</li>
+          <li>Registry profile setup assistance.</li>
+          <li>A custom-crafted <a href="/treatment-plans" class="text-brand-accent font-bold hover:underline">Personalized Treatment Plan</a> showing specific cannabinoid ratios suitable for your symptoms.</li>
+        </ul>
+
+        <div class="border-t border-slate-100 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p class="text-xs text-slate-500 italic">
+            For more detail on regulations, read the <a href="/florida-medical-marijuana-card-guide" class="text-brand-primary font-bold hover:underline">Complete Florida Card Guide</a>.
+          </p>
+          <a href="/#lead-form" class="bg-brand-accent hover:bg-brand-primary text-white font-bold px-6 py-3 rounded-full text-xs uppercase transition-colors shadow-md active-press">
+            Schedule Appointment
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>
