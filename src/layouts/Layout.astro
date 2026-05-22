@@ -152,32 +152,44 @@ const { title, description } = Astro.props;
 		<footer class="bg-brand-dark text-slate-200 py-16 border-t-4 border-brand-accent" id="footer">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-					<div class="md:col-span-2">
-						<a href="/" class="inline-block mb-6 bg-white p-3 rounded-2xl shadow-whisper active-press">
-							<img src="/logo.svg" alt="Releaf MD Logo" class="h-16 sm:h-20 w-auto" />
+					<div>
+						<a href="/" class="inline-block mb-4 bg-white p-2 rounded-xl shadow-whisper active-press">
+							<img src="/logo.svg" alt="Releaf MD Logo" class="h-12 w-auto" />
 						</a>
-						<p class="text-sm text-slate-300 mb-6 max-w-sm font-sans leading-relaxed">
-							ReleafMD is a compassionate, physician-led clinic for Florida medical marijuana evaluations. We provide professional clinical assessments, personalized care plans, and registry guidance. We are not a dispensary.
+						<p class="text-xs text-slate-300 max-w-sm font-sans leading-relaxed">
+							ReleafMD is a compassionate, physician-led clinic for Florida medical marijuana evaluations. We are not a dispensary.
 						</p>
 					</div>
 					
 					<div>
-						<h3 class="text-brand-accent font-serif-headline text-lg font-bold mb-4 uppercase tracking-wider">Quick Links</h3>
-						<ul class="space-y-3 text-sm">
-							<li><a href="/#visit-types" class="text-slate-300 hover:text-white transition-colors">Visit Types</a></li>
-							<li><a href="/#how-it-works" class="text-slate-300 hover:text-white transition-colors">How It Works</a></li>
-							<li><a href="/#doctor-feature" class="text-slate-300 hover:text-white transition-colors">Our Physician</a></li>
-							<li><a href="/#faq" class="text-slate-300 hover:text-white transition-colors">Frequently Asked Questions</a></li>
+						<h3 class="text-brand-accent font-serif-headline text-sm font-bold mb-4 uppercase tracking-wider">Quick Links</h3>
+						<ul class="space-y-2 text-xs">
+							<li><a href="/#visit-types" class="text-slate-300 hover:text-white transition-colors font-semibold">Visit Types</a></li>
+							<li><a href="/#how-it-works" class="text-slate-300 hover:text-white transition-colors font-semibold">How It Works</a></li>
+							<li><a href="/#doctor-feature" class="text-slate-300 hover:text-white transition-colors font-semibold">Our Physician</a></li>
+							<li><a href="/#faq" class="text-slate-300 hover:text-white transition-colors font-semibold">FAQs</a></li>
 						</ul>
 					</div>
 
 					<div>
-						<h3 class="text-brand-accent font-serif-headline text-lg font-bold mb-4 uppercase tracking-wider">Contact</h3>
-						<ul class="space-y-3 text-sm">
+						<h3 class="text-brand-accent font-serif-headline text-sm font-bold mb-4 uppercase tracking-wider">Contact</h3>
+						<ul class="space-y-2 text-xs">
 							<li><a href="tel:8136513492" class="text-slate-300 hover:text-white font-bold transition-colors">📞 813-651-3492</a></li>
 							<li><a href="mailto:info@releafmd.com" class="text-slate-300 hover:text-white font-bold transition-colors">✉️ info@releafmd.com</a></li>
-							<li><a href="/#lead-form" class="inline-block mt-2 bg-brand-primary text-white px-5 py-2 rounded-full font-bold text-xs hover:bg-brand-accent transition-colors shadow-md active-press">Schedule Appointment</a></li>
+							<li><a href="/#lead-form" class="inline-block mt-2 bg-brand-primary text-white px-4 py-2 rounded-full font-bold text-[10px] hover:bg-brand-accent transition-colors shadow-md active-press">Schedule Appointment</a></li>
 						</ul>
+					</div>
+
+					<div>
+						<h3 class="text-brand-accent font-serif-headline text-sm font-bold mb-4 uppercase tracking-wider">Clinic Hours & Info</h3>
+						<p class="text-xs text-slate-300 font-semibold mb-1">
+							📍 935 Oakfield Dr.<br/>Brandon, FL 33511
+						</p>
+						<p class="text-[11px] text-slate-400 leading-relaxed mt-2">
+							<strong>Mon &ndash; Fri:</strong> 9 AM &ndash; 4 PM<br/>
+							<strong>Sat &ndash; Sun:</strong> Closed<br/>
+							<a href="https://maps.google.com/?q=935+Oakfield+Dr+Brandon+FL+33511" target="_blank" rel="noopener noreferrer" class="text-brand-accent font-bold hover:underline block mt-1">Get Directions &rarr;</a>
+						</p>
 					</div>
 				</div>
 				<div class="border-t border-brand-primary/20 mt-12 pt-8 text-center text-xs text-slate-400">
