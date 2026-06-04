@@ -58,13 +58,97 @@ import Layout from '../layouts/Layout.astro';
           <li>Individualized dosing recommendations tailored to minimize pharmaceutical interactions.</li>
         </ul>
 
-        <div class="border-t border-slate-100 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p class="text-xs text-slate-500 italic">
-            Read our <a href="/florida-medical-marijuana-card-guide" class="text-brand-primary font-bold hover:underline">Complete Florida Card Guide</a>.
+        <div class="border-t border-slate-100 pt-10 mt-10">
+          <h3 class="text-xl font-serif-headline text-brand-dark mb-4 uppercase tracking-wide">Patient Referral Form</h3>
+          <p class="text-xs text-slate-500 mb-8 leading-relaxed">
+            Please complete the secure referral form below to refer a patient to Releaf MD. Submitting this form alerts our intake coordinator. To send clinical documentation and diagnostic records, please fax them securely to <strong>813-651-3493</strong> or email securely using encrypted mail to <strong>records@releafmd.com</strong>.
           </p>
-          <a href="https://live.vcita.com/site/DrKellyKing" target="_blank" rel="noopener noreferrer" class="bg-brand-accent hover:bg-brand-primary text-white font-bold px-6 py-3 rounded-full text-xs uppercase transition-colors shadow-md active-press">
-            Refer Patient
-          </a>
+
+          <form class="space-y-6 text-left max-w-2xl animate-fade-in" id="referralForm">
+            <!-- Section 1: Referring Provider -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-brand-primary border-b border-brand-primary/10 pb-1">1. Referring Provider Details</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="providerName" class="block text-xs font-bold text-slate-500 uppercase mb-1">Doctor / Practice Name</label>
+                  <input type="text" id="providerName" placeholder="Dr. Jane Smith, MD" class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow" required />
+                </div>
+                <div>
+                  <label for="providerNpi" class="block text-xs font-bold text-slate-500 uppercase mb-1">NPI Number</label>
+                  <input type="text" id="providerNpi" placeholder="1234567890" class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow" required />
+                </div>
+                <div>
+                  <label for="providerEmail" class="block text-xs font-bold text-slate-500 uppercase mb-1">Contact Email</label>
+                  <input type="email" id="providerEmail" placeholder="office@practice.com" class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow" required />
+                </div>
+                <div>
+                  <label for="providerPhone" class="block text-xs font-bold text-slate-500 uppercase mb-1">Phone / Fax</label>
+                  <input type="text" id="providerPhone" placeholder="Phone: 813-555-0100" class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow" required />
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 2: Patient Info -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-brand-primary border-b border-brand-primary/10 pb-1">2. Patient Details</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="patientName" class="block text-xs font-bold text-slate-500 uppercase mb-1">Patient Full Name</label>
+                  <input type="text" id="patientName" placeholder="John Doe" class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow" required />
+                </div>
+                <div>
+                  <label for="patientDob" class="block text-xs font-bold text-slate-500 uppercase mb-1">Patient Date of Birth</label>
+                  <input type="date" id="patientDob" class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow" required />
+                </div>
+                <div>
+                  <label for="patientPhone" class="block text-xs font-bold text-slate-500 uppercase mb-1">Patient Phone</label>
+                  <input type="tel" id="patientPhone" placeholder="813-555-0199" class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow" required />
+                </div>
+                <div>
+                  <label for="patientEmail" class="block text-xs font-bold text-slate-500 uppercase mb-1">Patient Email (Optional)</label>
+                  <input type="email" id="patientEmail" placeholder="patient@gmail.com" class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 3: Clinical Reason -->
+            <div class="space-y-4">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-brand-primary border-b border-brand-primary/10 pb-1">3. Clinical Referral Information</h4>
+              <div>
+                <label for="diagnosis" class="block text-xs font-bold text-slate-500 uppercase mb-1">Primary Diagnosis / Qualifying Condition</label>
+                <select id="diagnosis" class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow" required>
+                  <option value="">Select qualifying condition...</option>
+                  <option value="cancer">Cancer</option>
+                  <option value="epilepsy">Epilepsy / Seizures</option>
+                  <option value="glaucoma">Glaucoma</option>
+                  <option value="ptsd">PTSD</option>
+                  <option value="crohns">Crohn's Disease / Inflammatory Bowel</option>
+                  <option value="ms">Multiple Sclerosis / ALS</option>
+                  <option value="parkinsons">Parkinson's Disease</option>
+                  <option value="chronic_pain">Chronic Nonmalignant Pain</option>
+                  <option value="other">Other Severe / Debilitating Condition</option>
+                </select>
+              </div>
+              <div>
+                <label for="notes" class="block text-xs font-bold text-slate-500 uppercase mb-1">Clinical Notes & Dosing Considerations</label>
+                <textarea id="notes" rows="3" placeholder="Provide any relevant clinical information or specific routes to emphasize/avoid..." class="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm focus:outline-none focus:border-brand-primary focus:bg-white transition-all input-glow"></textarea>
+              </div>
+            </div>
+
+            <!-- Section 4: HIPAA Agreement -->
+            <div class="space-y-4 bg-brand-mint/30 p-4 rounded-xl border border-brand-primary/10">
+              <div class="flex items-start gap-3">
+                <input type="checkbox" id="hipaaConsent" class="mt-1 rounded border-slate-300 text-brand-primary focus:ring-brand-primary" required />
+                <label for="hipaaConsent" class="text-[11px] text-slate-500 leading-relaxed">
+                  <strong>HIPAA Compliance & Privacy Acknowledgment:</strong> I certify that this referral is made in accordance with clinical guidelines. Patient consent has been obtained where required. The information provided here will be transmitted securely and kept confidential in accordance with HIPAA standards and Florida Statute 381.986.
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-primary text-white font-bold px-8 py-3 rounded-full text-xs uppercase transition-colors shadow-md active-press cursor-pointer">
+              Submit Secure Referral
+            </button>
+          </form>
         </div>
 
       </div>
